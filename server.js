@@ -51,7 +51,9 @@ const mongoURI = "mongodb://localhost:27017/fitness_logger"
 
 const exercisesRouter = require('./routes/exercises');
 const usersRouter = require('./routes/users');
-
+app.use("/",(req,res)=>{
+    res.send("<h1>hello world</h1>")
+})
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
 const connection=async()=>{
