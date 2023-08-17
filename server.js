@@ -16,7 +16,7 @@ app.use(express.json());
 
 //
  const mongoURI = process.env.ATLAS_URL;
-
+console.log(mongoURI);
 // mongoose.connect(URI, {
 
 // useNewUrlParser: true, 
