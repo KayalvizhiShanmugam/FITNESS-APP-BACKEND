@@ -11,11 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 // const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/fitness_logger"
+//const mongoURI = "mongodb://localhost:27017/fitness_logger"
 
 
 //
-// const URI = process.env.MONGODB_URL;
+ const mongoURI = process.env.ATLAS_URL;
 
 // mongoose.connect(URI, {
 
